@@ -34,10 +34,10 @@
      The list of publication items
      *********************************/
 /* The list of items */
-.biblist { }
+.abslist { }
 
 /* The item */
-.biblist li { }
+.abslist li { }
 
 /* You can define custom styles for plstyle field here. */
 
@@ -46,6 +46,31 @@
  The box that contain BibTeX code
  *************************************/
 div.noshow { display: none; }
+div.abstract{
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:1.2em;
+	margin-bottom:1em;
+	border:1px solid silver;
+	padding: 0em 1em;
+	background: #ffffee;
+
+}
+</style>
+<script type="text/javascript">
+    function toggleAbstract(articleid) {
+        var abs = document.getElementById('abs_'+articleid);
+        if (abs) {
+            if(abs.className.indexOf('abstract') != -1) {
+                abs.className.indexOf('noshow') == -1?abs.className = 'abstract noshow':abs.className = 'abstract';
+            }
+        } else {
+            return;
+        }
+    }
+</script>
+
+<!--
 div.bibtex {
   margin-right: 0%;
   margin-top: 1.2em;
@@ -54,9 +79,9 @@ div.bibtex {
   padding: 0em 1em;
   background: #ffffee;
 }
-div.bibtex pre { font-size: 75%; overflow: auto;  width: 100%; padding: 0em 0em;}</style>
+div.bibtex pre { font-size: 75%; text-align: left; overflow: auto;  width: 100%; padding: 0em 0em;}</style>
 <script type="text/javascript">
-    <!--
+    <--
     // Toggle Display of BibTeX
     function toggleBibtex(articleid) {
         var bib = document.getElementById('bib_'+articleid);
@@ -68,8 +93,9 @@ div.bibtex pre { font-size: 75%; overflow: auto;  width: 100%; padding: 0em 0em;
             return;
         }
     }
--->
-    </script>
+
+    </scrip-->
+
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -354,10 +380,48 @@ div.bibtex pre { font-size: 75%; overflow: auto;  width: 100%; padding: 0em 0em;
             <div class="row text-justify">
                 <div class="col-md-12">
                     <p class="large text-muted">
-                    The list of accepted papers will be posted after the author notification date.
-                      <ul>
-                          <li style = "margin-top:1px;margin-bottom:1px"> <p class="large text-muted">Online Control with Adversarial Disturbances</p> </li>
-                          <li style = "margin-top:1px;margin-bottom:1px"><p class="large text-muted">Active Learning for Improving Decision-Making from Imbalanced Data</p> </li>
+                    We are excited to include the following papers in the poster sessions of the workshop:
+                      <ul class = "abslist text-left">
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Online Control with Adversarial Disturbances </strong>
+                          	<br><em>Naman Agarwal (Google); Brian Bullins (Princeton University); Elad Hazan (Princeton University and Google Brain); Sham Kakade (University of Washington); Karan Singh (Princeton University)</em><br> 
+                          	<a href="javascript:toggleAbstract('agarwal_online')">[abstract]</a>
+								<div id="abs_agarwal_online" class="abstract noshow">
+								<p class="text-left">
+								We study the control of a linear dynamical system with adversarial disturbances (as opposed to statistical noise). The objective we consider is one of regret: we desire an online control procedure that can do nearly as well as that of a procedure that has full knowledge of the disturbances in hindsight. Our main result is an efficient algorithm that provides nearly tight regret bounds for this problem. From a technical standpoint, this work generalizes upon previous work in two main aspects:  our model allows for adversarial noise in the dynamics, and allows for general convex costs.   
+								</p>
+								</div>
+                          </li>
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Active Learning for Improving Decision-Making from Imbalanced Data </strong>
+                          	<br><em>Iiris Sundin (Aalto University); Peter Schulam (Johns Hopkins University); Eero Siivola (Aalto University); Aki Vehtari (Aalto University); Suchi Saria (Johns Hopkins University); Samuel Kaski (Aalto University)</em><br> 
+                          	<a href="javascript:toggleAbstract('sundin_active')">[abstract]</a>
+								<div id="abs_sundin_active" class="abstract noshow">
+								<p class="text-left">
+								This extended abstract considers the reliability of prediction-based decision-making in a task of deciding which action $a$ to take for a target unit after observing its covariates $\tilde{x}$ and predicted outcomes $\hat{p}(\tilde{y} \mid \tilde{x}, a)$. An example case is personalized medicine and the decision of which treatment to give to a patient. A common problem when learning these models from observational data is imbalance, that is, difference in treated/control covariate distributions. We propose to assess the decision-making reliability by estimating the model's Type S error rate, which is the probability of the model inferring the sign of the treatment effect wrong. Furthermore, we use the estimated reliability as a criterion for active learning, in order to collect new (possibly expensive) observations, instead of making a forced choice based on unreliable predictions. We demonstrate the effectiveness of this decision-making aware active learning in two decision-making tasks: in simulated data with binary outcomes and in a medical dataset with synthetic and continuous treatment outcomes.
+								</p>
+								</div>
+                          </li>
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Challenges of Real-World Reinforcement Learning </strong>
+                          	<br><em>Gabriel Dulac-Arnold (Google Research); Daniel Mankowitz (DeepMind); Todd Hester (DeepMind)</em><br> 
+                          	<a href="javascript:toggleAbstract('dulac_challenges')">[abstract]</a>
+								<div id="abs_dulac_challenges" class="abstract noshow">
+								<p class="text-left">
+								Reinforcement learning (RL) has proven its worth in a series of artificial domains, and is beginning to show some successes in real-world scenarios. However, much of the research advances in RL are often hard to leverage in real-world systems due to a series of assumptions that are rarely satisfied in practice. We present a set of nine unique challenges that must be addressed to productionize RL to real world problems. For each of these challenges, we specify the exact meaning of the challenge, present some approaches from the literature, and specify some metrics for evaluating that challenge. An approach that addresses all nine challenges would be applicable to a large number of real world problems. We also present an example domain that has been modified to present these challenges as a testbed for practical RL research.
+								</p>
+								</div>
+                          </li>
+
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>An Online Algorithm for Smoothed Regression and LQR Control </strong>
+                          	<br><em>Gautam Goel (California Institute of Technology); Adam Wierman (California Institute of Technology)</em><br> 
+                          	<a href="javascript:toggleAbstract('goel_online')">[abstract]</a>
+								<div id="abs_goel_online" class="abstract noshow">
+								<p class="text-left">
+								We consider Online Convex Optimization (OCO) in the setting where the costs are $m$-strongly convex and the online learner pays a switching cost for changing decisions between rounds. We show that the recently proposed Online Balanced Descent (OBD) algorithm  is constant competitive in this setting, with competitive ratio $3 + O(1/m)$, irrespective of the ambient dimension. We demonstrate the generality of our approach by showing that the OBD framework can be used to construct competitive algorithms for a variety of online problems across learning and control, including online variants of ridge regression, logistic regression, maximum likelihood estimation, and LQR control.
+								</p>
+								</div>
+                          </li>
                       </ul>                   
                     </p> 
                </div>
