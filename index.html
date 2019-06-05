@@ -321,7 +321,7 @@ div.bibtex pre { font-size: 75%; text-align: left; overflow: auto;  width: 100%;
             </div>  
 
              <div class="row">
-                 <div class="col-sm-2">
+                 <div class="col-sm-3">
                      <div class="team-member">
                          <img src="img/emma.jpg" height="150" width="150" class="img-responsive img-circle">
                          <a href="https://cs.stanford.edu/people/ebrun/"><h4>Emma Brunskill</h4></a>
@@ -329,7 +329,7 @@ div.bibtex pre { font-size: 75%; text-align: left; overflow: auto;  width: 100%;
                      </div>
                  </div>
 
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                      <div class="team-member">
                          <img src="img/miro.jpg" height="150" width="150" class="img-responsive img-circle">
                          <a href="https://www.microsoft.com/en-us/research/people/mdudik/"><h4>Miro Dud&iacute;k</h4></a>
@@ -345,7 +345,7 @@ div.bibtex pre { font-size: 75%; text-align: left; overflow: auto;  width: 100%;
                      </div>
                  </div-->
                 
-                 <div class="col-sm-2">
+                 <div class="col-sm-3">
                      <div class="team-member">
                          <img src="img/suchi.jpg" height="150" width="150" class="img-responsive img-circle">
                          <a href="https://suchisaria.jhu.edu/"><h4>Suchi Saria</h4></a>
@@ -353,7 +353,7 @@ div.bibtex pre { font-size: 75%; text-align: left; overflow: auto;  width: 100%;
                      </div>
                  </div>
 
-                 <div class="col-sm-2">
+                 <div class="col-sm-3">
                      <div class="team-member">
                          <img src="img/dawn.jpg" height="150" width="150" class="img-responsive img-circle">
                          <a href="https://people.orie.cornell.edu/woodard/"><h4>Dawn Woodard</h4></a>
@@ -643,6 +643,147 @@ div.bibtex pre { font-size: 75%; text-align: left; overflow: auto;  width: 100%;
 								</div>
                           </li>                      
 
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Batch Learning from Bandit Feedback through Bias Corrected Reward Imputation</strong>
+                          	<br><em>Lequn Wang (Cornell); Yiwei Bai (Cornell University); Arjun  Bhalla (Cornell University); Thorsten Joachims (Cornell)</em><br> 
+                          	<a href="javascript:toggleAbstract('wang_batch')">[abstract]</a>
+								<div id="abs_wang_batch" class="abstract noshow">
+								<p class="text-left">
+								The problem of batch learning from logged contextual bandit feedback (BLBF) is ubiquitous in recommender systems, search, and online retail. Most previous methods for BLBF have followed a ``Model the Bias'' approach, estimating the expected reward of a policy using inverse propensity score (IPS) weighting. While unbiased, controlling the variance can be challenging. In contrast, we take a ``Model the World'' approach using the Direct Method (DM), where we learn a reward-regression model and derive a policy from the estimated rewards. While this approach has not been competitive with IPS weighting for mismatched models due to its bias, we show how directly minimizing the bias of the reward-regression model can lead to highly effective policy learning. In particular, we propose Bias Corrected Reward Imputation(BCRI) and formulate the policy learning problem as bi-level optimization, where the upper level maximizes the DM estimate and the lower level fits a weighted reward-regression.  We empirically characterize the effectiveness of BCRI compared to conventional reward-regression baselines and an IPS-based method.       
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>An Empirical Analysis of Off-Policy Policy Evaluation for Reinforcement Learning</strong>
+                          	<br><em>Cameron Voloshin (Caltech); Hoang M. Le (Caltech); Yisong Yue (Caltech)</em><br> 
+                          	<a href="javascript:toggleAbstract('voloshin_empirical')">[abstract]</a>
+								<div id="abs_voloshin_empirical" class="abstract noshow">
+								<p class="text-left">
+								Off-policy policy evaluation (OPE) is the task of predicting the online performance of a policy using only pre-collected historical data (collected from an existing deployed policy or set of policies).  For many real-world applications, accurate OPE is crucial since deploying bad policies can be prohibitively costly or dangerous.  With the increasing interest in deploying learning-based methods for safety-critical applications, the study of OPE has also become correspondingly more important. In this paper, we present the first comprehensive empirical analysis of most of the recently proposed OPE methods.  Based on thousands of experiments and detailed empirical analyses, we offer a summarized set of guidelines for effectively using OPE in practice, as well as suggest directions for future research to address current limitations.       
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Adaptive Learning Rate Selection for Temporal Difference Learning</strong>
+                          	<br><em>Harsh Gupta (UIUC); Rayadurgam Srikant (UIUC); Lei Ying (ASU)</em><br> 
+                          	<a href="javascript:toggleAbstract('gupta_adaptive')">[abstract]</a>
+								<div id="abs_gupta_adaptive" class="abstract noshow">
+								<p class="text-left">
+								Temporal Difference (TD) learning is a widely used class of algorithms in reinforcement learning. The success of TD learning algorithms relies heavily on the choice of the learning rate used. In this paper, we use recent results on finite-time performance of TD learning with linear function approximation to design an adaptive learning rate selection rule. The rule comprises a diagnostic test which determines whether the algorithm has reached the steady-state, i.e., the algorithm has stopped learning. Once such a determination is made, the rule adapts the learning rate (reducing the step size) so that the algorithm continues to learn. We implement our proposed rule on a variety of popular reinforcement learning applications and show that in all these scenarios, our rule outperforms the best fixed learning rate as well as other commonly used adaptive learning rate selection rules.       
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>A New Doubly Robust Policy Estimator on Infinite Horizon Reinforcement Learning</strong>
+                          	<br><em>Yihao Feng (UT Austin); Ziyang Tang (The University of Texas at Austin); Qiang Liu (UT Austin)</em><br> 
+                          	<a href="javascript:toggleAbstract('feng_new')">[abstract]</a>
+								<div id="abs_feng_new" class="abstract noshow">
+								<p class="text-left">
+								Recently infinite horizon off-policy evaluation method based on the estimation of density ratio has been proposed (Liu et al., 2018). Before that doubly robust estimator is the strongest baseline in off-policy evaluation infinite horizon. A natural question is if we can apply doubly robust method in infinite horizon setting. This paper answer that question and reveal an interesting connection between density ratio function and value function. We provide both theoretical and empirical result to show that our method yields significantly advantage over the previous method.        
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Sequential Decision Making for Autonomous Driving using Deep Reinforcement Learning</strong>
+                          	<br><em>Majid Moghadam (University of California, Santa Cruz); Gabriel Hugh Elkaim (University of California, Santa Cruz)</em><br> 
+                          	<a href="javascript:toggleAbstract('moghadam_sequential')">[abstract]</a>
+								<div id="abs_moghadam_sequential" class="abstract noshow">
+								<p class="text-left">
+								Tactical decision making is a critical feature for advanced driving systems, that involves several challenges such as uncertainty in other driver’s behaviors and the trade-off between safety and agility. In this work, we develop a novel simulation environment that emulates these challenges and train a deep reinforcement learning (DRL) agent that yields consistent performance in stochastic highway driving scenarios. To this end, we feed the occupancy grid of the surrounding environment of the ego vehicle to DRL agent and receive the high-level sequential commands (i.e. lane change commands) in order to send them to lower-level controllers.         
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>A SUPER* Algorithm to Determine Orderings of Items to Show Users</strong>
+                          	<br><em>Tanner Fiez (University of Washington); Nihar Shah (CMU); Lillian  Ratliff (University of Washington)</em><br> 
+                          	<a href="javascript:toggleAbstract('fiez_super')">[abstract]</a>
+								<div id="abs_fiez_super" class="abstract noshow">
+								<p class="text-left">
+								A number of applications involve the sequential arrival of users, and require showing each user a set of items. It is well known that the order in which the items are presented to a user can have a significant impact on the performance of the system, due to phenomenon such as primacy effects. An example application (which forms the focus of this paper) is the bidding process in conference peer review. Here reviewers enter the system sequentially, each reviewer needs to be shown the list of submitted papers, and the reviewer then ``bids'' to review some papers. In deciding on the ordering of the list of papers to show, there are two competing goals: (i) satisfying reviewers by showing them relevant items, and (ii) obtaining sufficiently many bids for each paper to ensure high quality reviews for all papers. In this paper, we first develop a framework to study this problem in a principled manner. We then design an algorithm called SUPER*, inspired by the A* algorithm, for this goal. We show that \super has a number of attractive properties (some analogous to that of A*). Finally, we conduct experiments which reveal that our algorithm is quite robust to the complexities arising in the real world.         
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Co-training for Policy Learning</strong>
+                          	<br><em>Jialin Song (Caltech); Ravi Lanka (JPL); Yisong Yue (Caltech); Masahiro Ono (JPL)</em><br> 
+                          	<a href="javascript:toggleAbstract('song_cotraining')">[abstract]</a>
+								<div id="abs_song_cotraining" class="abstract noshow">
+								<p class="text-left">
+								We study the problem of learning sequential decision-making policies in settings with multiple state-action representations. Such settings naturally arise in many domains, such as planning (e.g., multiple integer programming formulations) and various combinatorial optimization problems (e.g., those with both integer programming and graph-based formulations). Inspired by the classical co-training framework for classification, we study the problem of co-training for policy learning. We present sufficient conditions under which learning from two views can improve upon learning from a single view alone. Motivated by these theoretical insights, we present an algorithm for co-training for sequential decision making. Our framework is compatible with both reinforcement learning and imitation learning. We validate the effectiveness of our approach on a challenging class of combinatorial optimization problems: minimum vertex cover.         
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Double Neural Counterfactual Regret Minimization</strong>
+                          	<br><em>Hui Li (Ant Financial)</em><br> 
+                          	<a href="javascript:toggleAbstract('li_double')">[abstract]</a>
+								<div id="abs_li_double" class="abstract noshow">
+								<p class="text-left">
+								Counterfactual Regret Minimization (CRF) is a fundamental and effective technique for solving Imperfect Information Games (IIG). However, the original CRF algorithm only works for discrete state and action spaces, and the resulting strategy is maintained as a tabular representation. Such tabular representation limits the method from being directly applied to large games. In this paper, we propose a double neural representation for the imperfect information games, where one neural network represents the cumulative regret, and the other represents the average strategy.  Such neural representations enable us to avoid any manual game abstraction and conduct an end-to-end continual optimization. To make neural learning efficient, we also developed several novel techniques including a robust sampling method and mini-batch Monte Carlo Counterfactual Regret Minimization (MCCFR), which may be of independent interests.  Empirically, on games tractable to tabular approaches, our approach converged to results comparable to those of tabular counterparts and achieved much lower exploitability than deep reinforcement learning. On larger games, our approach achieved strategy profiles comparable to DeepStack's results while using significantly less memory.         
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Sequence Generation with a Guider Network</strong>
+                          	<br><em>Ruiyi Zhang (Duke University); Changyou Chen (University at Buffalo); Zhe Gan (Microsoft); Wenlin Wang (Duke Univeristy); Zheng Wen (Adobe Research); Lawrence Carin (Duke University)</em><br> 
+                          	<a href="javascript:toggleAbstract('zhang_sequence')">[abstract]</a>
+								<div id="abs_zhang_sequence" class="abstract noshow">
+								<p class="text-left">
+								Sequence generation with reinforcement learning (RL) has received significant attention recently. However, the sparse-reward issue remains to be a main challenge in the RL training process, where only a scalar guiding signal is available after an entire sequence has been generated. This type of sparse rewards tend to ignore global structural information of a sequence, causing generation of sequences semantically inconsistent. In this paper, we present a model-based RL approach to overcome this issue. Specifically, we propose a novel guider network to model the sequence-generation environment, which can assist next-word prediction and provide intermediate rewards for generator optimization. Extensive experiments demonstrate that the proposed method leads to improved performance for both unconditional and conditional sequence-generation tasks.         
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>A Kernel Loss for Solving the Bellman Equation</strong>
+                          	<br><em>Yihao Feng (UT Austin)</em><br> 
+                          	<a href="javascript:toggleAbstract('feng_kernel')">[abstract]</a>
+								<div id="abs_feng_kernel" class="abstract noshow">
+								<p class="text-left">
+								Value function learning plays a central role in many state-of-the-art reinforcement learning algorithms.  However, many standard algorithms such as Q-learning lose convergence guarantees when function approximation is used, as is observed in practice. In this paper, we propose a novel loss function, the minimization of which results in the true value function.  This loss deals with the double-sample challenge faced by algorithms like residual gradient and is easier to optimize than recently proposed primal-dual formulations.  In practice, our approach may be combined with general (differentiable) function classes such as neural networks, and is shown to work reliably and effectively for policy evaluation problems.         
+								</p>
+								</div>
+                          </li>                      
+
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Model-based Deep Reinforcement Learning for Financial Portfolio Optimization</strong>
+                          	<br><em>Sakyasingha Dasgupta (Neuri PTE LTD); Joon Sern Lee (Neuri PTE LTD); Pengqian Yu (Neuri PTE LTD); Ilya Kulyatin (Neuri PTE LTD); Zekun Shi (Neuri PTE LTD)</em><br> 
+                          	<a href="javascript:toggleAbstract('dasgupta_model')">[abstract]</a>
+								<div id="abs_dasgupta_model" class="abstract noshow">
+								<p class="text-left">
+								Financial portfolio optimization is the process of sequentially allocating wealth to a collection of assets (portfolio) during consecutive trading periods, based on investors' risk-return profile. Automating this process with machine learning remains a challenging problem. Here, we design a deep reinforcement learning (RL) architecture with an autonomous trading agent such that, given a portfolio, weight of assets in the portfolio are updated periodically, based on a global objective. In particular, without relying on a naive application of off the shelf model-free agent, we train our trading agent within a novel model-based RL architecture using an infused prediction module (IPM), and a behavior cloning module (BCM), extending standard actor-critic algorithms. We further design a back-testing and trade execution engine which interact with the RL agent in real time. Using historical {\em real} financial market data over multiple years, we simulate daily trading with practical constraints, and demonstrate that our proposed model is robust, profitable and risk-sensitive, as compared to baseline trading strategies and model-free RL agents as used in prior work.         
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Simple is Better: Training an End-to-end Contract Bridge Bidding Agent without Human Knowledge</strong>
+                          	<br><em>Qucheng Gong (Facebook AI Research); Yu Jiang (Facebook AI Research); Yuandong Tian (Facebook)</em><br> 
+                          	<a href="javascript:toggleAbstract('gong_simple')">[abstract]</a>
+								<div id="abs_gong_simple" class="abstract noshow">
+								<p class="text-left">
+								  Contract bridge is a multi-player imperfect-information game where one partnership collaborate with each other to compete against the other partnership. The game consists of two phases: bidding and playing. While playing is relatively easy for modern software, bidding is challenging and requires agents to learn a communication protocol to reach the optimal contract jointly, with their own private information. The agents need to exchange information to their partners, and interfere opponents, through a sequence of actions. In this work, we train a strong agent to bid competitive bridge purely through selfplay, outperforming WBridge5, a championship-winning software. Furthermore, we show that explicitly modeling belief is not necessary in boosting the performance. To our knowledge, this is the first competitive bridge agent that is trained with no domain knowledge. It outperforms previous state-of-the-art that use human replays with 70x fewer number of parameters.         
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Dueling Posterior Sampling for Preference-Based Reinforcement Learning</strong>
+                          	<br><em>Ellen R Novoseller (California Institute of Technology); Yanan Sui (Stanford University); Yisong Yue (Caltech); Joel Burdick (Caltech)</em><br> 
+                          	<a href="javascript:toggleAbstract('novoseller_dueling')">[abstract]</a>
+								<div id="abs_novoseller_dueling" class="abstract noshow">
+								<p class="text-left">
+								  In preference-based reinforcement learning (PBRL), an agent interacts with the environment while receiving preferences instead of absolute feedback. While there is increasing research activity in PBRL, the design of formal frameworks that admit tractable theoretical analysis remains an open challenge. We present DUELING POSTERIOR SAMPLING (DPS), which employs preference-based posterior sampling to learn both the system dynamics and the underlying utility function that governs the user's preferences. To solve the credit assignment problem, we develop a Bayesian approach to translate user preferences to a posterior distribution over state/action reward models. We prove an asymptotic no-regret rate for DPS with Bayesian logistic regression credit assignment; to our knowledge, this is the first regret guarantee for PBRL. We also discuss possible avenues for extending this proof methodology to analyze other credit assignment models, and finally, evaluate the approach empirically.         
+								</p>
+								</div>
+                          </li>                      
+
+                          <li style = "margin-top:1px;margin-bottom:1px"> <strong>Learning World Graphs to Accelerate Hierarchical Reinforcement Learning</strong>
+                          	<br><em>Wenling Shang (University of Amsterdam); Alexander Trott (Salesforce); Stephan Zheng (Salesforce); Caiming Xiong (Salesforce); Richard Socher (Salesforce)</em><br> 
+                          	<a href="javascript:toggleAbstract('shang_learning')">[abstract]</a>
+								<div id="abs_shang_learning" class="abstract noshow">
+								<p class="text-left">
+								  In  many  real-world  scenarios,  an  autonomousagent often encounters various tasks within a sin-gle complex environment. We propose to build agraph abstraction over the environment structureto accelerate the learning of these tasks.  Here, nodes  are  important  points  of  interest  (pivotal states) and edges represent feasible traversals be-tween them. Our approach has two stages. First,we jointly train a latent pivotal state model and acuriosity-driven goal-conditioned policy in a task-agnostic manner. Second, a high-level Manageruses the world graph to quickly find solutions tonew tasks and expresses subgoals in reference totheir nearby pivotal states to a low-level Worker.The Worker can then also use the graph to traverseand explore in long range. We perform a thorough ablation study to evaluate our approach on a suite of challenging maze tasks, demonstrating significant advantages from the proposed framework over baselines that lack world graph knowledge in terms of performance and efficiency.         
+								</p>
+								</div>
+                          </li>                      
+
                       </ul>                   
                     </p> 
                </div>
@@ -730,16 +871,16 @@ div.bibtex pre { font-size: 75%; text-align: left; overflow: auto;  width: 100%;
             <div class="col-lg-6 text-left">
                 <div class="col-md-12">
                       <p class="large text-muted">
-                          <b>Paper Submission Deadline:</b> May 20, 2019, 11:59 PM PST
+                          <b><strike>Paper Submission Deadline:</b> May 20, 2019, 11:59 PM PST</strike>
                       </p>
                       <p class="large text-muted">
-                          <b>Author Notification:</b> May 31, 2019, 11:59 PM PST
+                          <b><strike>Author Notification:</b> May 31, 2019, 11:59 PM PST</strike>
                       </p>
                       <p class="large text-muted">
                         <b>Final Version:</b> June 9, 2019, 11:59 PM PST 
                       </p>
                       <p class="large text-muted">
-                      <b>Workshop:</b> June 14 or 15, 2019
+                      <b>Workshop:</b> June 14, 2019
                       </p>
                 </div>
             </div>
