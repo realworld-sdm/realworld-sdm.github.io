@@ -56,6 +56,7 @@ div.abstract{
 	background: #ffffee;
 
 }
+
 </style>
 <script type="text/javascript">
     function toggleAbstract(articleid) {
@@ -242,8 +243,16 @@ div.bibtex pre { font-size: 75%; text-align: left; overflow: auto;  width: 100%;
                  </tr>
                 <tr>
                      <td>14:30 - 15:00 </td>
-                     <td>Invited Talk with Miro Dud&iacute;k </td>
-             
+                     <td><strong>Doubly robust off-policy evaluation with shrinkage</strong> - Miro Dud&iacute;k <em>(Invited Talk)</em> 
+                     	<br>
+                                       	<a href="javascript:toggleAbstract('dudik_doubly')">[talk abstract]</a>
+								<div id="abs_dudik_doubly" class="abstract noshow">
+								<p class="text-left">
+								Contextual bandits are a learning protocol that encompasses applications such as news recommendation, advertising, and mobile health, where an algorithm repeatedly observes some information about a user, makes a decision what content to present, and accrues a reward if the presented content is successful. In this talk, I will focus on the fundamental task of evaluating a new policy given historic data. I will describe the asymptotically optimal approach of doubly robust (DR) estimation, the reasons for its shortcomings in finite samples, and how to overcome these shortcomings by directly optimizing the bound on finite-sample error. Optimization yields a new family of estimators that, similarly to DR, leverage any direct model of rewards, but shrink importance weights to obtain a better bias-variance tradeoff than DR. Error bounds can also be used to select the best among multiple reward predictors. Somewhat surprisingly, reward predictors that work best with standard DR are not the same as those that work best with our modified DR. Our new estimator and model selection procedure perform extremely well across a wide variety of settings, so we expect they will enjoy broad practical use. <br><br> Based on joint work with Yi Su, Maria Dimakopoulou, and Akshay Krishnamurthy.   
+								</p>
+								</div>
+
+								</td>
                  </tr>
                   <tr>
                      <td>15:00 - 16:00 </td>
@@ -252,12 +261,23 @@ div.bibtex pre { font-size: 75%; text-align: left; overflow: auto;  width: 100%;
                  </tr>
                  <tr>
                      <td>16:00 - 16:30 </td>
-                     <td>Invited Talk with Suchi Saria</td>
+                     <td><strong>Link between Causal Inference and Reinforcement Learning and Applications to Learning from Offline/Observational Data </strong> - Suchi Saria <em>(Invited Talk)</em>
+
+                     </td>
+                     
                      <!-- <td> </td> -->
                  </tr>
                  <tr>
                      <td>16:30 - 17:00 </td>
-                     <td>Invited Talk with Dawn Woodard</td>
+                     <td><strong> Dynamic Pricing and Matching for Ride-Hailing </strong> - Dawn Woodard <em>(Invited Talk)</em>
+                     	<br>
+                                   	<a href="javascript:toggleAbstract('woodard_dynamic')">[talk abstract]</a>
+							<div id="abs_woodard_dynamic" class="abstract noshow">
+							<p class="text-left">
+Ride-hailing platforms like Uber, Lyft, Didi Chuxing, and Ola have achieved explosive growth, in part by improving the efficiency of matching between riders and drivers, and by calibrating the balance of supply and demand through dynamic pricing. We survey methods for dynamic pricing and matching in ride-hailing, and show that these are critical for providing an experience with low waiting time for both riders and drivers.  We also discuss approaches used to predict key inputs into those algorithms: demand, supply, and travel time in the road network.  Then we link the two levers together by studying a pool-matching mechanism called dynamic waiting that varies rider waiting and walking before dispatch, which is inspired by a recent carpooling product Express Pool from Uber.  We show using data from Uber that by jointly optimizing dynamic pricing and dynamic waiting, price variability can be mitigated, while increasing capacity utilization, trip throughput, and welfare. We also highlight several key practical challenges and directions of future research from a practitioner's perspective.
+							</p>
+							</div>
+                     </td>
                      <!-- <td> </td> -->
                  </tr>
 
