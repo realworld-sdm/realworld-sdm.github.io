@@ -490,6 +490,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								This extended abstract considers the reliability of prediction-based decision-making in a task of deciding which action $a$ to take for a target unit after observing its covariates $\tilde{x}$ and predicted outcomes $\hat{p}(\tilde{y} \mid \tilde{x}, a)$. An example case is personalized medicine and the decision of which treatment to give to a patient. A common problem when learning these models from observational data is imbalance, that is, difference in treated/control covariate distributions. We propose to assess the decision-making reliability by estimating the model's Type S error rate, which is the probability of the model inferring the sign of the treatment effect wrong. Furthermore, we use the estimated reliability as a criterion for active learning, in order to collect new (possibly expensive) observations, instead of making a forced choice based on unreliable predictions. We demonstrate the effectiveness of this decision-making aware active learning in two decision-making tasks: in simulated data with binary outcomes and in a medical dataset with synthetic and continuous treatment outcomes.
 								</p>
 								</div>
+								<a href="paper/5.pdf">[paper]</a>
                           </li>
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Challenges of Real-World Reinforcement Learning </strong>
@@ -500,6 +501,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Reinforcement learning (RL) has proven its worth in a series of artificial domains, and is beginning to show some successes in real-world scenarios. However, much of the research advances in RL are often hard to leverage in real-world systems due to a series of assumptions that are rarely satisfied in practice. We present a set of nine unique challenges that must be addressed to productionize RL to real world problems. For each of these challenges, we specify the exact meaning of the challenge, present some approaches from the literature, and specify some metrics for evaluating that challenge. An approach that addresses all nine challenges would be applicable to a large number of real world problems. We also present an example domain that has been modified to present these challenges as a testbed for practical RL research.
 								</p>
 								</div>
+								<a href="paper/6.pdf">[paper]</a>
                           </li>
 
 
@@ -521,6 +523,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								In this work, we consider the task of learning effective medical treatment policies for sepsis, a dangerous health condition, from observational data. We examine the performance of various reinforcement learning methodologies on this problem, varying the state representation used. We develop careful baselines for the performance of these methods when using different state representations, standardising the reward function formulation and evaluation methdology. Our results illustrate that simple, tabular Q-learning and Deep Q-Learning both lead to the most effective medical treatment strategies, and that temporal encoding in the state representation aids in discovering improved policies.
 								</p>
 								</div>
+								<a href="paper/9.pdf">[paper]</a>
                           </li>
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Modeling and Interpreting Real-world Human Risk Decision Making with Inverse Reinforcement Learning </strong>
@@ -531,6 +534,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								We model human decision-making behavior in a risk-taking task using inverse reinforcement learning (IRL) for the purposes of understanding the reward function of real human risk decision making. We are the first work that uses IRL to remove reward function behind human risk-taking decision making and interpret human decisions in risk-prone and risk-averse people. We hypothesize that the state history (e.g. rewards and decisions in previous trials) are related to the human reward function, which leads to risk-averse and risk-prone decisions.  In the model, these factors are input to IRL as features, and their reward weights are estimated. The behavioral results confirm the irrational and sub-optimal risk-related decisions. The model results quantify the weight of features and show that risk-prone person tends to decide based on the current bump number, while the risk-averse person relies on burst information from previous trial and the average end status. Our results demonstrate that IRL is an effective tool to model human decision-making behavior and helps interpret human psychological process in risk decisionmaking, and with potential as an assessment tool for risk-taking as well.
 								</p>
 								</div>
+								<a href="paper/11.pdf">[paper]</a>
                           </li>
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Staying up to Date with Online Content Changes Using Reinforcement Learning for Scheduling </strong>
@@ -571,6 +575,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Most on-policy imitation algorithms, such as DAgger, are designed for learning with a fixed supervisor. However, there are many settings in which the supervisor improves during policy learning, such as when the supervisor is a human performing a novel task or an improving algorithmic controller. We consider learning from an “improving supervisor” and derive a bound on the static-regret of online gradient descent when a converging supervisor policy is used. We present an on-policy imitation learning algorithm, Follow the Improving Teacher (FIT), which uses a deep model-based reinforcement learning (deepMBRL) algorithm to provide the sample complexity benefits of model-based methods but enable faster training and evaluation via distillation into a reactive controller.  We evaluate FIT with experiments on the Reacher and Pusher MuJoCodomains using the deep MBRL algorithm, PETS, as the improving supervisor. To the best of our knowledge, this work is the first to formally consider the setting of an improving supervisor in on-policy imitation learning.
 								</p>
 								</div>
+								<a href="paper/7.pdf">[paper]</a>
                           </li>
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Importance Sampling Policy Evaluation with an Estimated Behavior Policy </strong>
@@ -581,6 +586,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								We consider the problem of off-policy evaluation in Markov decision processes. Off-policy evaluation is the task of evaluating the expected return of one policy with data generated by a different, behavior policy. Importance sampling is a technique for off-policy evaluation that re-weights off-policy returns to account for differences in the likelihood of the returns between the two policies. In this paper, we study importance sampling with an estimated behavior policy where the behavior policy estimate comes from the same set of data used to compute the importance sampling estimate. We find that this estimator often lowers the mean squared error of off-policy evaluation compared to importance sampling with the true behavior policy or using a behavior policy that is estimated from a separate data set. Intuitively, estimating the behavior policy in this way corrects for error due to sampling in the action-space. Our empirical results also extend to other popular variants of importance sampling.
 								</p>
 								</div>
+								<a href="paper/16.pdf">[paper]</a>
                           </li>
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Generalized Off-Policy Actor-Critic </strong>
@@ -621,6 +627,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Restless bandit problems are instances of non-stationary multi-armed bandits. There are plenty of results from the optimization perspective, which aims to efficiently find a near-optimal policy when system parameters are known, but the learning perspective where the parameters are unknown is rarely investigated. In this paper, we analyze the performance of Thompson sampling in restless bandits with unknown parameters. We consider a general policy map to define our competitor and prove an $\tilde{O}(\sqrt{T})$ Bayesian regret bound. Our competitor is flexible enough to represent various benchmarks including the best fixed action policy, the optimal policy, the Whittle index policy, or the myopic policy. The empirical results also support our theoretical findings. 
 								</p>
 								</div>
+								<a href="paper/10.pdf">[paper]</a>
                           </li>
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Dynamic Interruption Policies for Reinforcement Learning Game Playing Using Multi-Sampling Multi-Armed Bandits </strong>
@@ -631,6 +638,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								In many reinforcement learning (RL) game tasks, episodes should be interrupted after a certain time, as the agent could sometimes fall into a deadlock state. This paper provides a dynamic interruption policy in RL game training via a newly defined multi-sampling multi-armed bandit (MSMAB) model, and offers an efficient algorithm named Exp3.P.MS for the new bandit setting. The experimental results show that the dynamic interruptions can adapt to the performance of the RL agent and spur a fast learning in game playing. 
 								</p>
 								</div>
+							<a href="paper/2.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>A Communication Efficient Hierarchical Distributed Optimization Algorithm for Multi-Agent Policy Evaluation </strong>
@@ -641,6 +649,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Policy evaluation problems in multi-agent reinforcement learning (MARL) have attracted growing interest recently. In these settings, agents collaborate to learn the value of a given policy with private local rewards and jointly observed state-action pairs. However, most fully decentralized algorithms treat each agent equally, without considering the communication structure of the agents over a given network, and the corresponding effects on communication efficiency. In this paper, we propose a hierarchical distributed algorithm that differentiates the roles of each of the agents during the evaluation process. This allows us to freely choose various mixing schemes (and corresponding mixing matrices that are not necessarily doubly stochastic), in order to reduce the communication cost, while still maintaining convergence at rates as fast as or even faster than the previous approaches. Theoretically, we show the proposed method, which contains existing distributed methods as a special case, achieves the same order of convergence rate as state-of-the-art methods. Numerical experiments on real datasets demonstrate the superior performances of our approach over other advanced algorithms in terms of convergence and total communication efficiency.  
 								</p>
 								</div>
+								<a href="paper/24.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Manipulating Neural Policies with Adversarial Observations</strong>
@@ -661,6 +670,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								We consider online Markov decision process (MDP) problems where both the transition probabilities and the rewards are time-varying or even adversarially generated. We propose an online algorithm based on an online implementation of value iterations and show that its dynamic regret, i.e. its total reward compared with that of the optimal (nonstationary) policies in hindsight, is upper bounded by the total variation of the transition probabilities and the rewards. Moreover, we show that the dynamic regret of any online algorithm is lower bounded by the total variation of the transition probabilities and the rewards, indicating that the proposed algorithm is optimal up to a constant factor. Finally, we test our algorithm in a power management problem for a data center and show that our algorithm reduces energy costs and ensures quality of services (QoS) under real electricity prices and job arrival rates.  
 								</p>
 								</div>
+								<a href="paper/25.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Efficient CFR for Imperfect Information Games with Instant Updates</strong>
@@ -671,6 +681,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Counterfactual regret minimization (CFR) is proved to approach a Nash equilibrium when solving two-player constant-sum perfect-recall imperfect information games. However, for large games, the convergence speed of current CFR variants is still the key limitation, especially in real-time applications. (1) We propose a novel counterfactual regret minimization method with instant updates, which has a lower convergence bound than CFR variants and can improve their convergence.   (2) We prove that the space complexity of our instant CFR is same with CFR variants and the proved bounds are much tighter than the previous ones. (3) We also prove that weighted average strategy by skipping previous iterations approaches an approximate Nash equilibrium.  % This method can empirically obtain a more efficiently convergent Nash equilibrium. The proved methods have been compared on several different game instances including Leduc Hold'em and five different subgames of Heads-Up No-Limit Texas Hold'em (HUNL) generated by DeepStack. In all of these game instances, the proved methods approach Nash equilibria more efficiently than all the compared state-of-the-art methods. In subgames of HUNL, our method converges three times faster than the hybrid method used in DeepStack.  
 								</p>
 								</div>
+								<a href="paper/27.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Bayesian EDDI: Sequential Variable Selection with Bayesian Partial VAE</strong>
@@ -681,6 +692,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Obtaining more relevant information enables better decision making, but may be costly. Optimal sequential decision making allows us to trade off the desire to make good decisions by acquiring further information with the cost of performing that acquisition. To this end, we propose a principled framework, named EDDI (Efficient Dynamic Discovery of high-value Information), based on the theory of Bayesian experimental design.  In EDDI we propose a novel partial variational autoencoder (Partial VAE), to efficiently handle missing data with different missing patterns. Additionally, we extend the VAE based framework to Bayesian treatment of the weights, which obtains better performance in small data regime.  EDDI then combines it with an acquisition function that maximizes expected information gain on a set of target variables at each step.    
 								</p>
 								</div>
+								<a href="paper/26.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Hierarchical Control Decomposition of Dexterous In-Hand Manipulation Tasks</strong>
@@ -711,6 +723,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								We consider the problem of active feature selection where we dynamically choose the set of features that acquires the highest predictive performance relative to a task. We propose a model-based deep reinforcement learning  framework for Optimal Discovery of high-value INformation (ODIN) in which the agent either chooses to ask for a new feature or to stop and predict. Utilizing the ability of the partial variational autoencoder (Ma et al., 2018) the framework models the conditional distribution of the features allowing for data efficiency. We introduce a novel cost function that is sensitive to both cost and order of feature acquisition. ODIN handles missing data naturally and ensures the globally optimal solution for most efficient feature acquisition while preserving data efficiency. We show improved performance on both synthetic and real-life datasets.      
 								</p>
 								</div>
+								<a href="paper/21.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Provably Correct Learning Algorithms in the Presence of Time-Varying Features Using a Variational Perspective</strong>
@@ -721,6 +734,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Features in machine learning problems are often time-varying and may be related to outputs in an algebraic or dynamical manner. The dynamic nature of these machine learning problems renders current higher order accelerated gradient descent methods unstable or weakens their convergence guarantees. Inspired by methods employed in adaptive control, this paper proposes new algorithms for the case when time-varying features are present, and demonstrates provable performance guarantees. In particular, we develop a unified variational perspective within a continuous time algorithm. This variational perspective includes higher order learning concepts and normalization, both of which stem from adaptive control, and allows stability to be established for dynamical machine learning problems where time-varying features are present. These higher order algorithms are also examined for provably correct learning in adaptive control and identification. Simulations are provided to verify the theoretical results.      
 								</p>
 								</div>
+								<a href="paper/31.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Neural Heterogeneous Scheduler</strong>
@@ -731,6 +745,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Access to parallel and distributed computation has enabled researchers and developers to improve algorithms and performance in many applications. Recent research has focused on next generation special purpose systems with multiple kinds of coprocessors, known as heterogeneous system-on-chips (SoC). In this paper, we introduce a method to intelligently schedule--and learn to schedule--a stream of tasks to available processing elements in such a system. We use deep reinforcement learning enabling complex sequential decision making and empirically show that our reinforcement learning system provides for a viable, better alternative to conventional scheduling heuristics with respect to minimizing execution time.      
 								</p>
 								</div>
+								<a href="paper/32.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Batch Learning from Bandit Feedback through Bias Corrected Reward Imputation</strong>
@@ -751,6 +766,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Off-policy policy evaluation (OPE) is the task of predicting the online performance of a policy using only pre-collected historical data (collected from an existing deployed policy or set of policies).  For many real-world applications, accurate OPE is crucial since deploying bad policies can be prohibitively costly or dangerous.  With the increasing interest in deploying learning-based methods for safety-critical applications, the study of OPE has also become correspondingly more important. In this paper, we present the first comprehensive empirical analysis of most of the recently proposed OPE methods.  Based on thousands of experiments and detailed empirical analyses, we offer a summarized set of guidelines for effectively using OPE in practice, as well as suggest directions for future research to address current limitations.       
 								</p>
 								</div>
+								<a href="paper/34.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Adaptive Learning Rate Selection for Temporal Difference Learning</strong>
@@ -761,6 +777,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Temporal Difference (TD) learning is a widely used class of algorithms in reinforcement learning. The success of TD learning algorithms relies heavily on the choice of the learning rate used. In this paper, we use recent results on finite-time performance of TD learning with linear function approximation to design an adaptive learning rate selection rule. The rule comprises a diagnostic test which determines whether the algorithm has reached the steady-state, i.e., the algorithm has stopped learning. Once such a determination is made, the rule adapts the learning rate (reducing the step size) so that the algorithm continues to learn. We implement our proposed rule on a variety of popular reinforcement learning applications and show that in all these scenarios, our rule outperforms the best fixed learning rate as well as other commonly used adaptive learning rate selection rules.       
 								</p>
 								</div>
+								<a href="paper/19.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>A New Doubly Robust Policy Estimator on Infinite Horizon Reinforcement Learning</strong>
@@ -771,6 +788,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Recently infinite horizon off-policy evaluation method based on the estimation of density ratio has been proposed (Liu et al., 2018). Before that doubly robust estimator is the strongest baseline in off-policy evaluation infinite horizon. A natural question is if we can apply doubly robust method in infinite horizon setting. This paper answer that question and reveal an interesting connection between density ratio function and value function. We provide both theoretical and empirical result to show that our method yields significantly advantage over the previous method.        
 								</p>
 								</div>
+								<a href="paper/35.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>A Hierarchical Architecture for Sequential Decision-Making in Autonomous Driving using Deep Reinforcement Learning</strong>
@@ -781,6 +799,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Tactical decision making is a critical feature for advanced driving systems, that incorporates several challenges such as complexity of the uncertain environment and reliability of the autonomous system. In this work, we develop a multi-modal architecture that includes the environmental modeling of ego surrounding and train a deep reinforcement learning (DRL) agent that yields consistent performance in stochastic highway driving scenarios. To this end, we feed the occupancy grid of the ego surrounding into the DRL agent and obtain the high-level sequential commands (i.e. lane change) to send them to lower-level controllers. We will show that dividing the autonomous driving problem into a multi-layer control architecture enables us to leverage the AI power to solve each layer separately and achieve an admissible reliability score. Comparing with end-to-end approaches, this architecture enables us to end up with a more reliable system which can be implemented in actual self-driving cars.         
 								</p>
 								</div>
+								<a href="paper/37.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>A SUPER* Algorithm to Determine Orderings of Items to Show Users</strong>
@@ -791,6 +810,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								A number of applications involve the sequential arrival of users, and require showing each user a set of items. It is well known that the order in which the items are presented to a user can have a significant impact on the performance of the system, due to phenomenon such as primacy effects. An example application (which forms the focus of this paper) is the bidding process in conference peer review. Here reviewers enter the system sequentially, each reviewer needs to be shown the list of submitted papers, and the reviewer then ``bids'' to review some papers. In deciding on the ordering of the list of papers to show, there are two competing goals: (i) satisfying reviewers by showing them relevant items, and (ii) obtaining sufficiently many bids for each paper to ensure high quality reviews for all papers. In this paper, we first develop a framework to study this problem in a principled manner. We then design an algorithm called SUPER*, inspired by the A* algorithm, for this goal. We show that \super has a number of attractive properties (some analogous to that of A*). Finally, we conduct experiments which reveal that our algorithm is quite robust to the complexities arising in the real world.         
 								</p>
 								</div>
+								<a href="paper/38.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Co-training for Policy Learning</strong>
@@ -801,6 +821,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								We study the problem of learning sequential decision-making policies in settings with multiple state-action representations. Such settings naturally arise in many domains, such as planning (e.g., multiple integer programming formulations) and various combinatorial optimization problems (e.g., those with both integer programming and graph-based formulations). Inspired by the classical co-training framework for classification, we study the problem of co-training for policy learning. We present sufficient conditions under which learning from two views can improve upon learning from a single view alone. Motivated by these theoretical insights, we present an algorithm for co-training for sequential decision making. Our framework is compatible with both reinforcement learning and imitation learning. We validate the effectiveness of our approach on a challenging class of combinatorial optimization problems: minimum vertex cover.         
 								</p>
 								</div>
+								<a href="paper/39.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Double Neural Counterfactual Regret Minimization</strong>
@@ -811,6 +832,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Counterfactual Regret Minimization (CRF) is a fundamental and effective technique for solving Imperfect Information Games (IIG). However, the original CRF algorithm only works for discrete state and action spaces, and the resulting strategy is maintained as a tabular representation. Such tabular representation limits the method from being directly applied to large games. In this paper, we propose a double neural representation for the imperfect information games, where one neural network represents the cumulative regret, and the other represents the average strategy.  Such neural representations enable us to avoid any manual game abstraction and conduct an end-to-end continual optimization. To make neural learning efficient, we also developed several novel techniques including a robust sampling method and mini-batch Monte Carlo Counterfactual Regret Minimization (MCCFR), which may be of independent interests.  Empirically, on games tractable to tabular approaches, our approach converged to results comparable to those of tabular counterparts and achieved much lower exploitability than deep reinforcement learning. On larger games, our approach achieved strategy profiles comparable to DeepStack's results while using significantly less memory.         
 								</p>
 								</div>
+								<a href="paper/40.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Sequence Generation with a Guider Network</strong>
@@ -831,6 +853,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Value function learning plays a central role in many state-of-the-art reinforcement learning algorithms.  However, many standard algorithms such as Q-learning lose convergence guarantees when function approximation is used, as is observed in practice. In this paper, we propose a novel loss function, the minimization of which results in the true value function.  This loss deals with the double-sample challenge faced by algorithms like residual gradient and is easier to optimize than recently proposed primal-dual formulations.  In practice, our approach may be combined with general (differentiable) function classes such as neural networks, and is shown to work reliably and effectively for policy evaluation problems.         
 								</p>
 								</div>
+								<a href="paper/36.pdf">[paper]</a>
                           </li>                      
 
 
@@ -842,6 +865,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								Financial portfolio optimization is the process of sequentially allocating wealth to a collection of assets (portfolio) during consecutive trading periods, based on investors' risk-return profile. Automating this process with machine learning remains a challenging problem. Here, we design a deep reinforcement learning (RL) architecture with an autonomous trading agent such that, given a portfolio, weight of assets in the portfolio are updated periodically, based on a global objective. In particular, without relying on a naive application of off the shelf model-free agent, we train our trading agent within a novel model-based RL architecture using an infused prediction module (IPM), and a behavior cloning module (BCM), extending standard actor-critic algorithms. We further design a back-testing and trade execution engine which interact with the RL agent in real time. Using historical {\em real} financial market data over multiple years, we simulate daily trading with practical constraints, and demonstrate that our proposed model is robust, profitable and risk-sensitive, as compared to baseline trading strategies and model-free RL agents as used in prior work.         
 								</p>
 								</div>
+								<a href="paper/23.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Simple is Better: Training an End-to-end Contract Bridge Bidding Agent without Human Knowledge</strong>
@@ -852,6 +876,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								  Contract bridge is a multi-player imperfect-information game where one partnership collaborate with each other to compete against the other partnership. The game consists of two phases: bidding and playing. While playing is relatively easy for modern software, bidding is challenging and requires agents to learn a communication protocol to reach the optimal contract jointly, with their own private information. The agents need to exchange information to their partners, and interfere opponents, through a sequence of actions. In this work, we train a strong agent to bid competitive bridge purely through selfplay, outperforming WBridge5, a championship-winning software. Furthermore, we show that explicitly modeling belief is not necessary in boosting the performance. To our knowledge, this is the first competitive bridge agent that is trained with no domain knowledge. It outperforms previous state-of-the-art that use human replays with 70x fewer number of parameters.         
 								</p>
 								</div>
+								<a href="paper/42.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Dueling Posterior Sampling for Preference-Based Reinforcement Learning</strong>
@@ -862,6 +887,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								  In preference-based reinforcement learning (PBRL), an agent interacts with the environment while receiving preferences instead of absolute feedback. While there is increasing research activity in PBRL, the design of formal frameworks that admit tractable theoretical analysis remains an open challenge. We present DUELING POSTERIOR SAMPLING (DPS), which employs preference-based posterior sampling to learn both the system dynamics and the underlying utility function that governs the user's preferences. To solve the credit assignment problem, we develop a Bayesian approach to translate user preferences to a posterior distribution over state/action reward models. We prove an asymptotic no-regret rate for DPS with Bayesian logistic regression credit assignment; to our knowledge, this is the first regret guarantee for PBRL. We also discuss possible avenues for extending this proof methodology to analyze other credit assignment models, and finally, evaluate the approach empirically.         
 								</p>
 								</div>
+								<a href="paper/47.pdf">[paper]</a>
                           </li>                      
 
                           <li style = "margin-top:1px;margin-bottom:1px"> <strong>Learning World Graphs to Accelerate Hierarchical Reinforcement Learning</strong>
@@ -872,6 +898,7 @@ Dr. Woodard earned her PhD in statistics from Duke University, after which she w
 								  In  many  real-world  scenarios,  an  autonomousagent often encounters various tasks within a sin-gle complex environment. We propose to build agraph abstraction over the environment structureto accelerate the learning of these tasks.  Here, nodes  are  important  points  of  interest  (pivotal states) and edges represent feasible traversals be-tween them. Our approach has two stages. First,we jointly train a latent pivotal state model and acuriosity-driven goal-conditioned policy in a task-agnostic manner. Second, a high-level Manageruses the world graph to quickly find solutions tonew tasks and expresses subgoals in reference totheir nearby pivotal states to a low-level Worker.The Worker can then also use the graph to traverseand explore in long range. We perform a thorough ablation study to evaluate our approach on a suite of challenging maze tasks, demonstrating significant advantages from the proposed framework over baselines that lack world graph knowledge in terms of performance and efficiency.         
 								</p>
 								</div>
+								<a href="paper/44.pdf">[paper]</a>
                           </li>                      
 
                       </ul>                   
